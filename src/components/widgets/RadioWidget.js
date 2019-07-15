@@ -4,10 +4,11 @@ import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
-const theme = createMuiTheme();
+//const theme = createMuiTheme();
 
 function RadioWidget(props) {
   const {
+    theme,
     options,
     value,
     required,

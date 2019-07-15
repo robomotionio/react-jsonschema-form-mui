@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Checkbox from "@material-ui/core/Checkbox";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
-const theme = createMuiTheme();
+//const theme = createMuiTheme();
 
 function selectValue(value, selected, all) {
   const at = all.indexOf(value);
@@ -18,7 +18,7 @@ function deselectValue(value, selected) {
 }
 
 function CheckboxesWidget(props) {
-  const { id, disabled, options, value, autofocus, readonly, onChange } = props;
+  const { id, theme, disabled, options, value, autofocus, readonly, onChange } = props;
   const { enumOptions, inline } = options;
   return (
     <MuiThemeProvider theme={theme}>

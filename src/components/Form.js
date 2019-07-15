@@ -161,6 +161,7 @@ export default class Form extends Component {
   render() {
     const {
       // children,
+      theme,
       safeRenderCompletion,
       id,
       className,
@@ -193,6 +194,7 @@ export default class Form extends Component {
         onSubmit={this.onSubmit}>
         {/* {this.renderErrors()} */}
         <_SchemaField
+          theme={theme}
           schema={schema}
           uiSchema={uiSchema}
           errorSchema={errorSchema}

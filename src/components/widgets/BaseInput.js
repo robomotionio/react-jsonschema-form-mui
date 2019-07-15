@@ -3,12 +3,13 @@ import PropTypes from "prop-types";
 import TextField from "@material-ui/core/TextField";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
-const theme = createMuiTheme();
+//const theme = createMuiTheme();
 
 function BaseInput(props) {
   // Note: since React 15.2.0 we can't forward unknown element attributes, so we
   // exclude the "options" and "schema" ones here.
   const {
+    theme,
     value,
     readonly,
     disabled,

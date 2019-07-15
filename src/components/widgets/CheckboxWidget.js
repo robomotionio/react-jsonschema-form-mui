@@ -4,10 +4,11 @@ import DescriptionField from "../fields/DescriptionField.js";
 import Checkbox from "@material-ui/core/Checkbox";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
-const theme = createMuiTheme();
+//const theme = createMuiTheme();
 
 function CheckboxWidget(props) {
   const {
+    theme,
     schema,
     id,
     value,

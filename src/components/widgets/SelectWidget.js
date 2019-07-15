@@ -41,6 +41,7 @@ function getValue(event, index, value, multiple) {
 
 function SelectWidget(props) {
   const {
+    theme,
     schema,
     id,
     options,
