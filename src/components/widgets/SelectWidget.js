@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { asNumber } from "../../utils";
 import Select from "@material-ui/core/Select";
+import Typography from "@material-ui/core/Typography";
 import MenuItem from "@material-ui/core/MenuItem";
 import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
 
@@ -60,6 +61,7 @@ function SelectWidget(props) {
   const emptyValue = multiple ? [] : "_";
   return (
     <MuiThemeProvider theme={theme}>
+      <Typography variant="caption">{schema.title}</Typography>
       <Select
         id={id}
         multiple={multiple}
