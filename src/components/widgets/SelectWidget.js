@@ -61,7 +61,7 @@ function SelectWidget(props) {
   const emptyValue = multiple ? [] : "_";
   return (
     <MuiThemeProvider theme={theme}>
-      <Typography variant="caption">{schema.title}</Typography>
+      <div><Typography variant="caption">{schema.title}</Typography></div>
       <Select
         id={id}
         multiple={multiple}
