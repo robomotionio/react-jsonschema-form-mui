@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
-import { MuiThemeProvider, createTheme } from "@mui/styles";
+import { ThemeProvider, createTheme } from "@mui/styles";
 
 //const theme = createTheme();
 
@@ -23,7 +23,7 @@ function RadioWidget(props) {
   // checked={checked} has been moved above name={name}, As mentioned in #349;
   // this is a temporary fix for radio button rendering bug in React, facebook/react#7630.
   return (
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <div className="field-radio-group">
         <RadioGroup
           name="shipSpeed"
@@ -42,7 +42,7 @@ function RadioWidget(props) {
           ))}
         </RadioGroup>
       </div>
-    </MuiThemeProvider>
+    </ThemeProvider>
   );
 }
 

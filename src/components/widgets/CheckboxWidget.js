@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import DescriptionField from "../fields/DescriptionField.js";
 import Checkbox from "@mui/material/Checkbox";
-import { MuiThemeProvider, createTheme } from "@mui/styles";
+import { ThemeProvider, createTheme } from "@mui/styles";
 
 //const theme = createTheme();
 
@@ -20,7 +20,7 @@ function CheckboxWidget(props) {
     onChange,
   } = props;
   return (
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <div className={`checkbox ${disabled || readonly ? "disabled" : ""}`}>
         {schema.description && (
           <DescriptionField description={schema.description} />
@@ -37,7 +37,7 @@ function CheckboxWidget(props) {
           <span>{label}</span>
         </label>
       </div>
-    </MuiThemeProvider>
+    </ThemeProvider>
   );
 }
 

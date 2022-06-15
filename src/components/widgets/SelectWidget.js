@@ -4,7 +4,7 @@ import { asNumber } from "../../utils";
 import Select from "@mui/material/Select";
 import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
-import { MuiThemeProvider, createTheme } from "@mui/styles";
+import { ThemeProvider, createTheme } from "@mui/styles";
 
 const theme = createTheme();
 
@@ -60,7 +60,7 @@ function SelectWidget(props) {
   const { enumOptions } = options;
   const emptyValue = multiple ? [] : "_";
   return (
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <div><Typography variant="caption">{schema.title}</Typography></div>
       <Select
         id={id}
@@ -103,7 +103,7 @@ function SelectWidget(props) {
           );
         })}
       </Select>
-    </MuiThemeProvider>
+    </ThemeProvider>
   );
 }
 

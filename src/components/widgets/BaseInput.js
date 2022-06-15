@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import TextField from "@mui/material/TextField";
-import { MuiThemeProvider, createTheme } from "@mui/styles";
+import { ThemeProvider, createTheme } from "@mui/styles";
 
 //const theme = createTheme();
 
@@ -28,7 +28,7 @@ function BaseInput(props) {
     return props.onChange(value === "" ? options.emptyValue : value);
   };
   return (
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <TextField
         //className="form-control"
         readOnly={readonly}
@@ -42,7 +42,7 @@ function BaseInput(props) {
           onFocus && (event => onFocus(inputProps.id, event.target.value))
         }
       />
-    </MuiThemeProvider>
+    </ThemeProvider>
   );
 }
 

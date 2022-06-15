@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Checkbox from "@mui/material/Checkbox";
-import { MuiThemeProvider, createTheme } from "@mui/styles";
+import { ThemeProvider, createTheme } from "@mui/styles";
 
 //const theme = createTheme();
 
@@ -21,7 +21,7 @@ function CheckboxesWidget(props) {
   const { id, theme, disabled, options, value, autofocus, readonly, onChange } = props;
   const { enumOptions, inline } = options;
   return (
-    <MuiThemeProvider theme={theme}>
+    <ThemeProvider theme={theme}>
       <div className="checkboxes" id={id}>
         {enumOptions.map((option, index) => {
           const checked = value.indexOf(option.value) !== -1;
@@ -56,7 +56,7 @@ function CheckboxesWidget(props) {
           );
         })}
       </div>
-    </MuiThemeProvider>
+    </ThemeProvider>
   );
 }
 
