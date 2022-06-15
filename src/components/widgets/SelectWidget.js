@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { asNumber } from "../../utils";
-import Select from "@material-ui/core/Select";
-import Typography from "@material-ui/core/Typography";
-import MenuItem from "@material-ui/core/MenuItem";
-import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
+import Select from "@mui/material/Select";
+import Typography from "@mui/material/Typography";
+import MenuItem from "@mui/material/MenuItem";
+import { MuiThemeProvider, createTheme } from "@mui/styles";
 
 const theme = createTheme();
 

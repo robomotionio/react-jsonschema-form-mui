@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Radio from "@material-ui/core/Radio";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
+import Radio from "@mui/material/Radio";
+import RadioGroup from "@mui/material/RadioGroup";
+import { MuiThemeProvider, createTheme } from "@mui/styles";
 
 //const theme = createTheme();
 

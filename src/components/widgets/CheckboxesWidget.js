@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Checkbox from "@material-ui/core/Checkbox";
-import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
+import Checkbox from "@mui/material/Checkbox";
+import { MuiThemeProvider, createTheme } from "@mui/styles";
 
 //const theme = createTheme();
 

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import TextField from "@material-ui/core/TextField";
-import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
+import TextField from "@mui/material/TextField";
+import { MuiThemeProvider, createTheme } from "@mui/styles";
 
 //const theme = createTheme();
 
