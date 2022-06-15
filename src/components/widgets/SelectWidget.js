@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 import MenuItem from "@mui/material/MenuItem";
 import { ThemeProvider, createTheme } from "@mui/styles";
 
-const theme = createTheme();
+//const theme = createTheme();
 
 /**
  * This is a silly limitation in the DOM where option change event values are
