@@ -1,9 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Checkbox from "@material-ui/core/Checkbox";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 
-//const theme = createMuiTheme();
+//const theme = createTheme();
 
 function selectValue(value, selected, all) {
   const at = all.indexOf(value);

@@ -37,9 +37,9 @@
     "node": ">=6"
   },
   "peerDependencies": {
-    "react": "^16.4.1",
     "@material-ui/core": "^3.5.1",
-    "@material-ui/icons": "^3.0.1"
+    "@material-ui/icons": "^3.0.1",
+    "react": "^16.4.1"
   },
   "dependencies": {
     "jsonschema": "^1.2.0",

@@ -4,9 +4,9 @@ import { asNumber } from "../../utils";
 import Select from "@material-ui/core/Select";
 import Typography from "@material-ui/core/Typography";
 import MenuItem from "@material-ui/core/MenuItem";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 
-const theme = createMuiTheme();
+const theme = createTheme();
 
 /**
  * This is a silly limitation in the DOM where option change event values are

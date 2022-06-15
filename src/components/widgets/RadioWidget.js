@@ -2,9 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 import Radio from "@material-ui/core/Radio";
 import RadioGroup from "@material-ui/core/RadioGroup";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 
-//const theme = createMuiTheme();
+//const theme = createTheme();
 
 function RadioWidget(props) {
   const {
